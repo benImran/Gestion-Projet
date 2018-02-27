@@ -29,6 +29,17 @@ services:
         public: true
         tags: ['controller.service_arguments']
 
+#    my.oauth_aware.user_provider.service:
+#        class: HWI\Bundle\OAuthBundle\Security\Core\User\FOSUBUserProvider
+#        arguments:
+#            - '@fos_user.user_manager.default'
+#            - ['pass properties as array']
+
+#    app.form.registration:
+#            class: PhoneBundle\Form\RegistrationType
+#            tags:
+#                - { name: form.type, alias: app_user_registration }
+
     # add more services, or override services that need manual wiring
     # AppBundle\Service\ExampleService:
     #     arguments:
